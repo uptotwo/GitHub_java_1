@@ -43,6 +43,7 @@ public class PureJavaShiro {
             //5、身份验证失败
         	System.out.println("failed");
             e.printStackTrace();
+            
         }
 
         Assert.assertEquals(true, subject.isAuthenticated()); //断言用户已经登录
