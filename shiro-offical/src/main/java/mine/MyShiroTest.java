@@ -28,7 +28,9 @@ public class MyShiroTest {
 		UsernamePasswordToken token = new UsernamePasswordToken();
 		
 		token.setUsername("admin");
+		
 		token.setPassword("adminpsd".toCharArray());
+		
 		try {
 			
 			subject.login(token);
@@ -40,12 +42,12 @@ public class MyShiroTest {
 			System.exit(0);
 		}
 		
-		Permission p  = new WildcardPermission("wildCardPermission");
+		Permission p  = new WildcardPermission("role2do2");
 		
-		if(subject.isPermitted("role2do2")){
-			System.out.println(subject.getPrincipal() +"has permission -- role2do2");
+		if(subject.isPermitted(p)){
+			System.out.println(subject.getPrincipal() +"  has permission -- role2do2");
 		}
 		
-		
 	}
+	
 }
