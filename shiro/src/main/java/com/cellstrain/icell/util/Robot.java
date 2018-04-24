@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 /**
  * java实现爬虫
+ * this is a robot
  */
 public class Robot {
     public static void main(String[] args) {
